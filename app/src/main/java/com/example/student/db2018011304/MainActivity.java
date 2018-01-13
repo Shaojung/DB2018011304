@@ -12,4 +12,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("MYLOG", "這是 onCreate");
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("MYLOG", "這是 onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("MYLOG", "這是 onResume");
+    }
 }
