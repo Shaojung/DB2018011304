@@ -24,4 +24,22 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d("MYLOG", "這是 onResume");
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("MYLOG", "這是 onRause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("MYLOG", "這是 onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("MYLOG", "這是 onDestroy");
+    }
 }
