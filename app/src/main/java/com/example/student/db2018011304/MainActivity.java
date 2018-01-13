@@ -1,8 +1,10 @@
 package com.example.student.db2018011304;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,4 +44,10 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("MYLOG", "這是 onDestroy");
     }
+    public void click1(View v)
+    {
+        Intent it = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(it);
+    }
+
 }
